@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/css/main.css') }}" />
+</head>
+<body>
+    {{ render(controller('MainDefaultBundle:Default:topnav')) }}
+    <div id='page_container'>
+        <header id="main_header">
+            <h1>Football Stats 90</h1>
+            <nav id="main_nav">
+                <ul>
+                    <li>Leagues</li>
+                    <li>Premier League</li>
+                    <li>La Liga</li>
+                    <li>Serie A</li>
+                    <li>Bundesliga</li>
+                    <li>Ligue 1</li>
+                </ul>
+            </nav> <!-- #main_nav -->
+        </header> <!-- #main_header -->
+        <div id='page_content'>
+            {% block body %}{% endblock %}
+        </div>
+        <aside id='aside_tester'>
+            {% block aside %}{% endblock %}
+        </aside>
+        <div id='teteresf'>
+            {% block whicker %}{% endblock %}
+        </div>
+        {% block main_footer %}{% endblock %}
+        <footer id='main_footer'>
+            <h3>This is the footer</h3>
+            <p>Yes it is yeah yeah yeah yeah yeah yeah yeah oh yeah!!!!</p>
+            <p>whatever i do what i want.</p>
+        </footer>
+    </div> <!-- #page_container -->
+    {% block javascripts %}{% endblock %}
+</body>
+</html>
