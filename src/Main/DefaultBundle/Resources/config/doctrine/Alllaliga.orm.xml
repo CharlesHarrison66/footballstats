@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Main\DefaultBundle\Entity\Alllaliga" table="alllaliga">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="season" type="string" column="season" length="11" nullable="true"/>
+    <field name="homeTeam" type="string" column="home team" length="11" nullable="true"/>
+    <field name="awayTeam" type="string" column="away team" length="11" nullable="true"/>
+    <field name="halfTimeHomeGoals" type="integer" column="half time home goals" nullable="true"/>
+    <field name="halfTimeAwayGoals" type="integer" column="half time away goals" nullable="true"/>
+    <field name="halfTimeResult" type="string" column="half time result" length="1" nullable="true"/>
+    <field name="fullTimeHomeGoals" type="integer" column="full time home goals" nullable="true"/>
+    <field name="fullTimeAwayGoals" type="integer" column="full time away goals" nullable="true"/>
+    <field name="fullTimeResult" type="string" column="full time result" length="1" nullable="true"/>
+    <field name="fullTimeHomeCorners" type="integer" column="full time home corners" nullable="true"/>
+    <field name="fullTimeAwayCorners" type="integer" column="full time away corners" nullable="true"/>
+    <field name="totalCorners" type="integer" column="total corners" nullable="false"/>
+    <field name="homeYellow" type="integer" column="home yellow" nullable="true"/>
+    <field name="awayYellow" type="integer" column="away yellow" nullable="true"/>
+    <field name="homeRed" type="integer" column="home red" nullable="true"/>
+    <field name="awayRed" type="integer" column="away red" nullable="true"/>
+  </entity>
+</doctrine-mapping>

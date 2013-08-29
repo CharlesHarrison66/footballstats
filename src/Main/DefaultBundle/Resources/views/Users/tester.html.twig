@@ -1,0 +1,9 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<p>This is just a test</p>
+<h4>Yes it is!!!!!!</h4>
+{% for user in users %}
+    <p>{{ user.firstname }}</p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,15 @@
+main_default_homepage:
+    pattern:  default/hello/{name}
+    defaults: { _controller: MainDefaultBundle:Default:index }
+    
+main_users_index:
+    pattern: users
+    defaults: { _controller: MainDefaultBundle:Users:index }
+    
+main_users_tester:
+    pattern: users/tester
+    defaults: { _controller: MainDefaultBundle:Users:tester }
+    
+main_users_new:
+    pattern: users/new
+    default: { _controller: MainDefaultBundle:Users:new }
